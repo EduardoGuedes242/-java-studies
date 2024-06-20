@@ -14,11 +14,9 @@ public class Main {
 
         double mediaFinal = (notaOne + notaTwo + notaThree);
 
-        if(mediaFinal >= 60){
-            System.out.println("Voce esta aprovado pela nota final de: " + mediaFinal);
-        } else {
-            System.out.println("Voce esta Reprovado pela nota final de: " + mediaFinal);
-        }
+        String msg = mediaFinal > 60 ?
+                ("Voce esta aprovado pela nota final de: " + mediaFinal)
+                : ("Voce esta Reprovado pela nota final de: " + mediaFinal);
 
     }
 }
