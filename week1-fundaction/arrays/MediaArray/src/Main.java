@@ -8,6 +8,5 @@ public class Main {
         resultSoma = resultSoma / 3;
 
         System.out.println("A Meta entre os valures forncediso é de: " + resultSoma);
-
     }
 }
