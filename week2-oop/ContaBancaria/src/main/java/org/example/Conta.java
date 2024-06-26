@@ -19,7 +19,7 @@ public class Conta {
     return this.salt;
   }
 
-  public void depositarDinheiro(double salt) {
+  public void  depositarDinheiro(double salt) {
     if(this.status) {
       this.salt = this.salt + salt;
       System.out.println("Deposito realizado com sucesso");
