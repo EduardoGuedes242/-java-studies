@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        
         System.out.println("Favor informar os numeros");
 
         ArrayList<Integer> lista2 = new ArrayList<>();
