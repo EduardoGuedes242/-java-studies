@@ -55,20 +55,20 @@ class Lutador {
   }
   public void setPeso(double peso) {
     this.peso = peso;
-    setCategoria(peso);
+    setCategoria();
   }
 
   public String getCategoria() {
     return categoria;
   }
-  public void setCategoria(double peso) {
-    if (peso <= 50.2) {
+  public void setCategoria() {
+    if (this.peso <= 50.2) {
       this.categoria = "Invalido";
-    } else if(peso <= 70.3) {
+    } else if(this.peso <= 70.3) {
       this.categoria = "Leve";
-    } else if (peso <= 83.9) {
+    } else if (this.peso <= 83.9) {
       this.categoria = "Medio";
-    } else if (peso <= 120.2){
+    } else if (this.peso <= 120.2){
       this.categoria = "Pesado";
     } else {
       this.categoria = "Invalido";
@@ -106,18 +106,15 @@ class Lutador {
   }
 
   public void ganharLuta() {
-    int qtdVitoria = getVitorias() + 1;
-    setVitorias(qtdVitoria);
+    setVitorias(getVitorias() + 1);
   }
 
   public void perderLuta(){
-    int qtdPerdida = getDerrotas() + 1;
-    setDerrotas(qtdPerdida);
+    setDerrotas(getDerrotas() + 1);
   }
 
   public void empatarLuta() {
-    int qtdEmpates = getEmpates() +1;
-    setEmpates(qtdEmpates);
+    setEmpates(getEmpates() + 1);
   }
 
 }

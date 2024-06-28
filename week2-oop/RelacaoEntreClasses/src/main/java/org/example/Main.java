@@ -4,7 +4,7 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("Estamos Gerando os seus lutadores");
 
-    Lutador[] lutadores = new Lutador[5];
+    Lutador[] lutadores = new Lutador[6];
 
     lutadores[0] = new Lutador("Pretty boy",
             "França",
@@ -59,5 +59,15 @@ public class Main {
             12,
             2,
             4);
+
+    Luta luta1 = new Luta(lutadores[1], lutadores[0]);
+    luta1.marcarLuta();
+    luta1.lutar(4);
+    luta1.lutar(4);
+    luta1.lutar(4);
+    luta1.lutar(4);
+    luta1.lutar(4);
+    luta1.lutar(4);
+
   }
 }
