@@ -31,4 +31,8 @@ public class Pessoa {
   public void setSexo(String sexo) {
     this.sexo = sexo;
   }
+
+  public void fazerAniversario() {
+    setIdade(getIdade() + 1);
+  }
 }
