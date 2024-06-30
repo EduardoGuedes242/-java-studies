@@ -1,6 +1,6 @@
 # Java Study Plan Summary
 
-## Week 1-2: Introduction to Java
+## Week 1-2: Introduction to Java - 🆗
 **Objective:** Familiarize with basic syntax and development environment.
 - Theoretical material or video lessons.
 - Practice writing small programs (e.g., simple calculator, unit conversion).
@@ -8,10 +8,11 @@
 - Review and document code.
 - Participate in online forums or communities.
 
+
 **Weekly Project:** Simple registration system (clients, products, etc.).
 **Weekend:** Consolidate the project, add improvements, and write a LinkedIn post.
 
-## Week 3-4: Object-Oriented Programming (OOP)
+## Week 3-4: Object-Oriented Programming (OOP) - 🆗
 **Objective:** Understand and apply OOP concepts.
 - Theoretical material or video lessons on OOP concepts (classes, inheritance, polymorphism, etc.).
 - Practice creating classes and objects (e.g., pet management system).
