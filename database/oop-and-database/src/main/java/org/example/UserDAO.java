@@ -64,4 +64,17 @@ public class UserDAO {
     }
   }
 
+  public  void deleteAll() {
+    String sqlDelete = "DELETE FROM java$user";
+
+    try(Connection conexao = Conexao.getConnection();
+        PreparedStatement preparedStatement = conexao.prepareStatement(sqlDelete)){
+      preparedStatement.executeUpdate();
+      System.out.println("Todos os usuarios foram deletados com sucesso");
+    }catch (SQLException e) {
+      System.out.println("Ocorreu um Erro ao deletar o usuarios");
+    }
+
+  }
+
 }

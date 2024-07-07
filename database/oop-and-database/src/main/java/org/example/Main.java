@@ -13,6 +13,7 @@ public class Main {
     System.out.println("1 - Buscar Usuarios");
     System.out.println("2 - Cadastrar Usuarios");
     System.out.println("2 - Alterar usuarios");
+    System.out.println("3 - Deletar usuarios");
     int opcao =  scanner.nextInt();
 
     if(opcao == 1) {
@@ -43,6 +44,8 @@ public class Main {
       newName = scanner.next();
 
       userDAO.updateNameUser(newName, oldName);
+    } else if(opcao == 4) {
+      userDAO.deleteAll();
     }
     else  {
       System.out.println("Funcao nao implementada");
