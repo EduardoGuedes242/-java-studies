@@ -18,25 +18,25 @@ public class TodoService {
   }
 
   public List<Todo> getAllTodo() {
-    appConfig.enviarWhatsapp();
+    //appConfig.enviarWhatsapp();
     List<Todo> listTodo = todoRepository.findAll();
     return listTodo;
   }
 
   public List<Todo> createTodo(Todo todo) {
-    appConfig.enviarWhatsapp();
+    //appConfig.enviarWhatsapp();
     todoRepository.save(todo);
     return getAllTodo();
   }
 
   public List<Todo> updateTodo(Todo todo) {
-    appConfig.enviarWhatsapp();
+    //appConfig.enviarWhatsapp();
     todoRepository.save(todo);
     return getAllTodo();
   }
 
   public List<Todo> deleteTodo(Long id) {
-    appConfig.enviarWhatsapp();
+    //appConfig.enviarWhatsapp();
     todoRepository.deleteById(id);
     return getAllTodo();
   }
