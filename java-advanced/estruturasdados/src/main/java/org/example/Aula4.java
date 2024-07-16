@@ -10,7 +10,7 @@ public class Aula4 {
     vetor.addItem("Elemento 3");
     System.out.println(vetor.getTamanho());
 
-    System.out.println(vetor.toString());
+    System.out.println(vetor.getValorArray(6));
 
   }
 }

@@ -44,7 +44,10 @@ public class Vetor {
  }
 
 
-  public String getValorArray(int index) {
+  public String getValorArray(int index)  {
+    if(!(index >= 0 && index <= tamanho)) {
+      throw new RuntimeException("Valor do indice inexistente");
+    }
     return this.elementos[index];
   }
 
