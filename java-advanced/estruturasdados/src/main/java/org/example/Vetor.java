@@ -1,19 +1,23 @@
 package org.example;
 
+import java.lang.reflect.Array;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Vetor {
 
   private String[] elementos;
-  private int qtdRealVetor;
+  private int tamanho;
 
   public Vetor(int capacidade) {
     this.elementos = new String[capacidade];
-    this.qtdRealVetor = 0;
+    this.tamanho = 0;
   }
 
-  public int tamanhoVetor() {
-    return  this.elementos.length;
+  public int getTamanho() {
+    return  this.tamanho;
   }
 
 
@@ -30,9 +34,9 @@ public class Vetor {
 
   //Aprendido
   public boolean addItem(String elemento) {
-    if(this.qtdRealVetor < this.elementos.length) {
-      this.elementos[this.qtdRealVetor] = elemento;
-      this.qtdRealVetor ++;
+    if(this.tamanho < this.elementos.length) {
+      this.elementos[this.tamanho] = elemento;
+      this.tamanho++;
       return true;
     } else {
       return false;
@@ -42,6 +46,19 @@ public class Vetor {
 
   public String getValorArray(int index) {
     return this.elementos[index];
+  }
+
+  @Override
+  public String toString() {
+    String[] newLista = new String[this.tamanho];
+
+    for (int i = 0; i < this.tamanho; i++) {
+      if(this.elementos[i] != null) {
+        newLista[i] = this.elementos[i];
+      }
+    }
+
+    return Arrays.toString(newLista);
   }
 
 }
