@@ -51,6 +51,15 @@ public class Vetor {
     return this.elementos[index];
   }
 
+  public boolean getValorArrayExiste(String elemento) {
+    for (int i = 0; i < this.tamanho; i++) {
+      if(elemento.equals(elementos[i])  ) {
+       return true;
+      }
+    }
+    return false;
+  }
+
   @Override
   public String toString() {
     String[] newLista = new String[this.tamanho];
