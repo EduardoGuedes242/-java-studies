@@ -5,13 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
 @RestController
+@SpringBootApplication
 public class DockerspringApplication {
 
 	@GetMapping
-	public String unico() {
-		return "Aplicação no ar";
+	String unico() {
+		return "App no Ar com docker";
 	}
 
 	public static void main(String[] args) {
